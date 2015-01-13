@@ -52,6 +52,8 @@ class GlobalSettings {
             $data[$field] = get_option($field);
         }
 
+        $data['site_name'] = get_bloginfo('name');
+
         return $data;
     }
 

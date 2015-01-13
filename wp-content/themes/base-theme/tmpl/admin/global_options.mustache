@@ -1,0 +1,57 @@
+<div class="wrap global_settings">
+
+    <div id="icon-options-general" class="icon32"><br></div>
+    <h2>Global Settings | {{site_name}}</h2>
+
+    <p id="updateMessage"></p>
+
+    <form id="globalSettings">
+        <fieldset>
+            <legend>Site Administration:</legend>
+
+            <label for="sv_debug">Enable Debug Mode*</label>
+            <input type="checkbox" id="sv_debug" name="sv_debug" value="1" {{#sv_debug}}checked="checked"{{/sv_debug}} />
+
+            <label for="paypal_email">Production Paypal Email Address</label>
+            <input type="text" id="paypal_email" name="paypal_email" value="{{paypal_email}}" />
+
+            <label for="sandbox_paypal_email">Sandbox Paypal Email Address</label>
+            <input type="text" id="sandbox_paypal_email" name="sandbox_paypal_email" value="{{sandbox_paypal_email}}" />
+
+            <label for="individual_fee">Individual Membership Fee</label>
+            <input type="text" id="individual_fee" name="individual_fee" value="{{individual_fee}}" />
+
+            <label for="business_fee">Business Membership Fee</label>
+            <input type="text" id="business_fee" name="business_fee" value="{{business_fee}}" />
+
+            <p class="disclaimer">*Debug mode forces PayPal to use the sandbox and enforces a variety of settings not intended for the production site.</p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Social Accounts:</legend>
+
+            <label for="facebook_url">Facebook URL</label>
+            <input type="text" id="facebook_url" name="facebook_url" value="{{facebook_url}}" />
+
+            <label for="strava_url">Strava Club URL</label>
+            <input type="text" id="strava_url" name="strava_url" value="{{strava_url}}" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Club Address:</legend>
+            <label for="club_address">Address</label>
+            <input type="text" id="club_address" name="club_address" value="{{club_address}}" />
+
+            <label for="club_city">City</label>
+            <input type="text" id="club_city" name="club_city" value="{{club_city}}" />
+
+            <label for="club_state">State</label>
+            <input type="text" id="club_state" name="club_state" value="{{club_state}}" />
+
+            <label for="club_zip">Zip</label>
+            <input type="text" id="club_zip" name="club_zip" value="{{club_zip}}" />
+        </fieldset>
+
+        <input id="save_global_settings" type="submit" class="button-primary" value="Submit" />
+    </form>
+</div>
