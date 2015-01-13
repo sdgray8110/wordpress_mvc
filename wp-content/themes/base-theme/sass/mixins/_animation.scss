@@ -1,0 +1,130 @@
+
+@mixin animate-transition($transition: all, $duration: 200ms, $timing: ease, $delay: 0s) {
+    -moz-transition: $transition $duration $timing $delay;
+    -ms-transition: $transition $duration $timing $delay;
+    -webkit-transition: $transition $duration $timing $delay;
+    transition: $transition $duration $timing $delay;
+}
+
+@mixin keyframes($animation_name) {
+    @-webkit-keyframes $animation_name {
+        @content;
+    }
+    @-moz-keyframes $animation_name {
+        @content;
+    }
+    @-ms-keyframes $animation_name {
+        @content;
+    }
+    @-o-keyframes $animation_name {
+        @content;
+    }
+    @keyframes $animation_name {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+@mixin fadeIn($duration) {
+    animation: fadein $duration;
+    -moz-animation: fadein $duration;
+    -webkit-animation: fadein $duration;
+    -o-animation: fadein $duration;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Animations */
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+/* Ellipsis Animation */
+.loading-ellipsis {
+    i:nth-of-type(1) {
+        opacity: 0;
+        -webkit-animation: dot 1.3s infinite;
+        -webkit-animation-delay: 0.0s;
+        -moz-animation: dot 1.3s infinite;
+        -moz-animation-delay: 0.0s;
+        -o-animation: dot 1.3s infinite;
+        -o-animation-delay: 0.0s;
+        animation: dot 1.3s infinite;
+        animation-delay: 0.0s;
+    }
+
+    i:nth-of-type(2) {
+        opacity: 0;
+        -webkit-animation: dot 1.3s infinite;
+        -webkit-animation-delay: 0.2s;
+        -moz-animation: dot 1.3s infinite;
+        -moz-animation-delay: 0.2s;
+        -o-animation: dot 1.3s infinite;
+        -o-animation-delay: 0.2s;
+        animation: dot 1.3s infinite;
+        animation-delay: 0.2s;
+    }
+
+    i:nth-of-type(3) {
+        opacity: 0;
+        -webkit-animation: dot 1.3s infinite;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation: dot 1.3s infinite;
+        -moz-animation-delay: 0.3s;
+        -o-animation: dot 1.3s infinite;
+        -o-animation-delay: 0.3s;
+        animation: dot 1.3s infinite;
+        animation-delay: 0.3s;
+    }
+
+    @-webkit-keyframes dot {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes dot {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes dot {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

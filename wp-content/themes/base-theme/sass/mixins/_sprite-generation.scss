@@ -1,0 +1,24 @@
+$sprite: sprite-map("sprites/**/*.png", $spacing: 50);
+$sprite-background: sprite-url($sprite);
+
+@mixin sprite-background-image($selector, $setWidth: false, $offset-x: 0, $offset-y: 0, $setHeight: false) {
+    $pos: sprite-position($sprite, $selector, $offset-x*2, $offset-y*2);
+
+    background-image: $sprite-background;
+    background-position: nth($pos, 1) nth($pos, 2)/2;
+    background-size: ceil(image-width(sprite-path($sprite)) / 2), auto;
+    background-repeat: no-repeat;
+
+    @if $setHeight {
+        $height: image-height(sprite-file($sprite, $selector));
+        height: $height / 2;
+    }
+    @if $setWidth {
+        $width: image-width(sprite-file($sprite, $selector));
+        width: $width / 2;
+    }
+}
+
+@mixin sprite-background-position($selector, $offset-x: 0, $offset-y: 0) {
+    background-position: sprite-position($sprite, $selector, $offset-x, $offset-y);
+}

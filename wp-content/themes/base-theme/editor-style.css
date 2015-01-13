@@ -1,0 +1,18 @@
+/*
+Theme Name: Siskiyou Velo
+Description: Used to style the TinyMCE editor.
+*/
+
+* {
+    color: #444;
+    font-family: Arial, Helvetica, san-serif;
+}
+p,
+dl,
+td,
+th,
+ul,
+ol,
+blockquote {
+    font-size: 12px;;
+}

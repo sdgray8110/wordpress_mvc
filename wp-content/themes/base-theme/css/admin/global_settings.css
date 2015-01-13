@@ -1,0 +1,62 @@
+/* line 2, ../../sass/admin/global_settings.scss */
+.global_settings h2 {
+  margin: 0 0 15px;
+}
+/* line 6, ../../sass/admin/global_settings.scss */
+.global_settings form {
+  width: 100%;
+  float: left;
+}
+/* line 11, ../../sass/admin/global_settings.scss */
+.global_settings legend {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px -15px;
+}
+/* line 17, ../../sass/admin/global_settings.scss */
+.global_settings fieldset {
+  margin: 0 0 0 15px;
+}
+/* line 21, ../../sass/admin/global_settings.scss */
+.global_settings input,
+.global_settings label {
+  display: block;
+  float: left;
+  clear: both;
+}
+/* line 28, ../../sass/admin/global_settings.scss */
+.global_settings label {
+  font-weight: 700;
+}
+/* line 32, ../../sass/admin/global_settings.scss */
+.global_settings input {
+  margin: 0 0 10px 0;
+}
+/* line 36, ../../sass/admin/global_settings.scss */
+.global_settings input[type=text] {
+  width: 450px;
+}
+/* line 40, ../../sass/admin/global_settings.scss */
+.global_settings #updateMessage {
+  clear: both;
+  font-weight: 700;
+  float: left;
+  margin: 15px 0;
+}
+/* line 47, ../../sass/admin/global_settings.scss */
+.global_settings .disclaimer {
+  clear: both;
+}
+
+/* Twitter Handles */
+/* line 53, ../../sass/admin/global_settings.scss */
+#handle_container,
+#handle_container li {
+  display: block;
+}
+
+/* line 58, ../../sass/admin/global_settings.scss */
+#add-another {
+  display: block;
+  clear: both;
+}

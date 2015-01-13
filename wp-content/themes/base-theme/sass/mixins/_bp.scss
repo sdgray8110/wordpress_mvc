@@ -1,0 +1,11 @@
+// Breakpoints
+@mixin bp($expr) {
+
+    // include print media type for Chrome, which needs it for each media query declared
+    // if "print" is not included here, Chrome will not print larger breakpoint styles
+    $bp-args: $expr, print;
+
+    @include breakpoint($bp-args, $no-query: true) {
+        @content
+    }
+}

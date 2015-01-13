@@ -1,0 +1,61 @@
+.global_settings {
+    h2 {
+        margin: 0 0 15px;
+    }
+
+    form {
+        width: 100%;
+        float: left;
+    }
+
+    legend {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 0 10px -15px;
+    }
+
+    fieldset {
+        margin: 0 0 0 15px;
+    }
+
+    input,
+    label {
+        display: block;
+        float: left;
+        clear: both;
+    }
+
+    label {
+        font-weight: 700;
+    }
+
+    input {
+        margin: 0 0 10px 0;
+    }
+
+    input[type=text] {
+        width: 450px;
+    }
+
+    #updateMessage {
+        clear: both;
+        font-weight: 700;
+        float: left;
+        margin: 15px 0;
+    }
+
+    .disclaimer {
+        clear: both;
+    }
+}
+
+/* Twitter Handles */
+#handle_container,
+#handle_container li {
+    display: block;
+}
+
+#add-another {
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,10 @@
+/* Breakpoints */
+$bp-small : min-width 480px;
+$bp-small-plus : min-width 650px;
+$bp-medium : min-width 768px;
+$bp-large : min-width 1024px;
+$bp-full : min-width 1440px;
+$bp-non-retina-large : (max-resolution 1.9dppx, 1024px);
+$bp-retina-large : (min-resolution 2dppx, 1024px);
+
+/* Color Variables */

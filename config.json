@@ -1,0 +1,78 @@
+{
+  "environments": {
+    "development": {
+      "hostname": "wp-mvc.dev",
+      "db": {
+        "name": "wp_mvc",
+        "user": "root",
+        "password": "bronco79",
+        "host": "localhost",
+        "charset": "utf8",
+        "collate": ""
+      },
+      "wp": {
+        "memoryLimit": "96M",
+        "authKey": "put your unique phrase here",
+        "secureAuthKey": "put your unique phrase here",
+        "loggedInSalt": "put your unique phrase here",
+        "nonceKey": "put your unique phrase here",
+        "authSalt": "put your unique phrase here",
+        "secureAuthSalt": "put your unique phrase here",
+        "loggedInSalt": "put your unique phrase here",
+        "nonceSalt": "put your unique phrase here"
+      },
+      "assets": {
+        "stylesheet": "css/app.css"
+      }
+    },
+    "production": {
+      "hostname": "wp-mvc.com",
+      "db": {
+        "name": "gray8110_wp_mvc",
+        "user": "gray8110",
+        "password": "8aU_V{^{,RJC",
+        "host": "localhost",
+        "charset": "utf8",
+        "collate": ""
+      },
+      "wp": {
+        "memoryLimit": "96M",
+        "authKey": "put your unique phrase here",
+        "secureAuthKey": "put your unique phrase here",
+        "loggedInSalt": "put your unique phrase here",
+        "nonceKey": "put your unique phrase here",
+        "authSalt": "put your unique phrase here",
+        "secureAuthSalt": "put your unique phrase here",
+        "loggedInSalt": "put your unique phrase here",
+        "nonceSalt": "put your unique phrase here"
+      },
+      "assets": {
+        "stylesheet": "css/app.css"
+      }
+    }
+  },
+  "globalMapping": {
+    "db": {
+      "name": "DB_NAME",
+      "user": "DB_USER",
+      "password": "DB_PASSWORD",
+      "host": "DB_HOST",
+      "charset": "DB_CHARSET",
+      "collate": "DB_COLLATE"
+    },
+    "wp": {
+      "memoryLimit": "WP_MEMORY_LIMIT",
+      "authKey": "AUTH_KEY",
+      "secureAuthKey": "SECURE_AUTH_KEY",
+      "loggedInSalt": "LOGGED_IN_KEY",
+      "nonceKey": "NONCE_KEY",
+      "authSalt": "AUTH_SALT",
+      "secureAuthSalt": "SECURE_AUTH_SALT",
+      "loggedInSalt": "LOGGED_IN_SALT",
+      "nonceSalt": "NONCE_SALT"
+    },
+    "assets": {
+      "stylesheet": "BASE_STYLESHEET"
+    }
+  }
+}
