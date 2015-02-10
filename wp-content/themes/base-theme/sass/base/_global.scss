@@ -29,3 +29,13 @@ body {
 .hidden {
     display: none;
 }
+
+p {
+    font-size: 20px;
+}
+
+@include bp($bp-medium) {
+    p {
+        font-size: 14px;
+    }
+}
